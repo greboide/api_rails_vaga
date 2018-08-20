@@ -25,4 +25,4 @@ Será avaliado as boas práticas de código, performance e estrutura da API.
 * How to run the test suite
 - rake spec
 * Services (job queues, cache servers, search engines, etc.)
-- sidekiq 
+- sidekiq, redis 
