@@ -1,6 +1,3 @@
-# README
-    
-    
 # Desenvolvimento de API
 
 Criar uma API ruby on rails que irá receber requisições de front-end e também de aplicativos
@@ -15,25 +12,17 @@ mobiles. A API deve seguir os requisitos abaixo:
 
 Será avaliado as boas práticas de código, performance e estrutura da API.
     
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
-
+- ruby-2.4.4
 * System dependencies
-
+- Gemfile
 * Configuration
 
 * Database creation
-
+- postgres
 * Database initialization
 
 * How to run the test suite
-
+- rake spec
 * Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- sidekiq 
