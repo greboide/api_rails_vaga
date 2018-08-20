@@ -2,7 +2,7 @@ class V1::DependentesController < ApplicationController
   before_action :authenticate_user!
   respond_to :json
   def index
-    @dependentes = Dependente.all
+    @dependentes = User.find(@current_user.id).dependentes
     render json: @dependentes, status: :ok
   end
 

@@ -6,10 +6,10 @@ RSpec.describe V1::DependentesController, type: :controller do
   describe 'GET #show' do
 
     before(:each) do
-      @user = FactoryBot.create :user
+      @parente = FactoryBot.create :dependente
+      @user = User.find(@parente.user_id)
       auth_headers = @user.create_new_auth_token
       request.headers.merge!(auth_headers)
-      @parente = FactoryBot.create :dependente
       get :show, params: {id: @parente.id}
     end
 
@@ -26,10 +26,10 @@ RSpec.describe V1::DependentesController, type: :controller do
   describe 'GET #index' do
 
     before(:each) do
-      @user = FactoryBot.create :user
+      @parente = FactoryBot.create :dependente
+      @user = User.find(@parente.user_id)
       auth_headers = @user.create_new_auth_token
       request.headers.merge!(auth_headers)
-      @parente = FactoryBot.create :dependente
       get :index
     end
 

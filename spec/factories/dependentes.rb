@@ -15,6 +15,6 @@ FactoryBot.define do
   factory :dependente do
     name { "João" }
     parentesco { "irmão" }
-    association :user, factory: :user, strategy: :build
+    association :user, factory: :user
   end
 end
